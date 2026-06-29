@@ -15,7 +15,7 @@ Lightweight-CNN-Quantization/
 ├── README.md                      # 项目说明文档
 │
 ├── software/                      # 软件算法端（Python/PyTorch）
-│   ├── train.py                   # CNN 模型训练、前向传播与特征矩阵可视化脚本
+│   ├── train_cnn.py                   # CNN 模型训练、前向传播与特征矩阵可视化脚本
 │   ├── export_hex.py              # INT8 对称最大值量化与 Hex 指令流导出脚本
 │   └── fpga_cnn_weights.pth       # 训练收敛后导出的浮点模型权重文件
 │
@@ -37,7 +37,7 @@ Lightweight-CNN-Quantization/
 * **执行命令**：
   打开终端，依次运行以下脚本完成模型收敛并刷新底层数据集：
   ```bash
-  python software/train.py
+  python software/train_cnn.py
   python software/export_hex.py
   ```
 * **软硬件对标基准**：
